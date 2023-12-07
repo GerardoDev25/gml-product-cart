@@ -7,6 +7,11 @@
     "dist",
     "src"
   ],
+  "repository": {
+    "url": "https://github.com/GerardoDev25/gml-product-cart",
+    "type": "git"
+  },
+  "homepage": "https://github.com/GerardoDev25",
   "engines": {
     "node": ">=10"
   },
@@ -14,6 +19,7 @@
     "start": "tsdx watch",
     "build": "tsdx build",
     "test": "tsdx test --passWithNoTests",
+    "test:watch": "tsdx test --watch",
     "lint": "tsdx lint",
     "prepare": "tsdx build",
     "size": "size-limit",
@@ -47,18 +53,39 @@
     }
   ],
   "devDependencies": {
+    "@babel/preset-env": "^7.23.5",
+    "@babel/preset-react": "^7.23.3",
     "@rollup/plugin-image": "^3.0.3",
     "@size-limit/preset-small-lib": "^11.0.1",
     "@types/react": "^18.2.42",
     "@types/react-dom": "^18.2.17",
+    "babel-jest": "^29.7.0",
     "husky": "^8.0.3",
+    "identity-obj-proxy": "^3.0.0",
+    "jest": "^29.7.0",
     "postcss": "^8.4.32",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
+    "react-test-renderer": "^18.2.0",
     "rollup-plugin-postcss": "^4.0.2",
     "size-limit": "^11.0.1",
     "tsdx": "^0.14.1",
     "tslib": "^2.6.2",
-    "typescript": "^5.3.3"
+    "typescript": "^5.3.3",
+    "@types/react-test-renderer": "^18.0.7"
+  },
+  "keywords": [
+    "React",
+    "Product",
+    "Gerardo",
+    "Miranda"
+  ],
+  "dependencies": {
+  },
+  "jest": {
+    "moduleNameMapper": {
+      "\\.(jpg|jpeg|png|gif|eot|otf|webp|svg|ttf|woff|woff2|mp4|webm|wav|mp3|m4a|aac|oga)$": "identity-obj-proxy",
+      "\\.(css|less|scss|sass)$": "identity-obj-proxy"
+    }
   }
 }

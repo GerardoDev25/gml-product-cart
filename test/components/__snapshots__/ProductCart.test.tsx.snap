@@ -1,0 +1,27 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`test in ProductCart should to increase the counter 1`] = `
+<div
+  className="productCard undefined"
+>
+  <h1>
+    Prodcut Cart
+  </h1>
+  <span>
+    0
+  </span>
+  <button
+    onClick={[Function]}
+  />
+</div>
+`;
+
+exports[`test in ProductCart should to show the component correctly with the img costumed 1`] = `
+<div
+  className="productCard undefined"
+>
+  <h1>
+    ProductCart
+  </h1>
+</div>
+`;
