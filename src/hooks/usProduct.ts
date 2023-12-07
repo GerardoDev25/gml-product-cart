@@ -13,7 +13,6 @@ export const useProduct = (props: useProductArgs) => {
   const [counter, setCounter] = useState<number>(initialValues?.count || value);
 
   const isMounted = useRef(false);
-
   useEffect(() => {
     isMounted.current = true;
   }, []);
@@ -25,7 +24,6 @@ export const useProduct = (props: useProductArgs) => {
 
   const increaseBy = (value: number) => {
     let newValue = Math.max(counter + value, 0);
-
     if (initialValues?.maxCount)
       newValue = Math.min(newValue, initialValues.maxCount);
 
